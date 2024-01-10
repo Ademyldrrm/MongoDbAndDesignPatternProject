@@ -18,8 +18,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\AdemYildirim\source\repos\MongoDbAndDesignPatternProject\MongoDbAndDesignPatternProject
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/AdemYildirim/source/repos/MongoDbAndDesignPatternProject/MongoDbAndDesignPatternProject/Views/AdminTeam/CreateTeam.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5UZWFtXENyZWF0ZVRlYW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/AdemYildirim/source/repos/MongoDbAndDesignPatternProject/MongoDbAndDesignPatternProject/Views/AdminTeam/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5UZWFtXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AdemYildirim/source/repos/MongoDbAndDesignPatternProject/MongoDbAndDesignPatternProject/Views/AdminTeam/UpdateTeam.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5UZWFtXFVwZGF0ZVRlYW0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/AdemYildirim/source/repos/MongoDbAndDesignPatternProject/MongoDbAndDesignPatternProject/Views/Home/Index.cshtml]

@@ -48,6 +48,14 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.16, )"
+            },
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[2.23.1, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.23.1, )"
             }
           },
           "imports": [

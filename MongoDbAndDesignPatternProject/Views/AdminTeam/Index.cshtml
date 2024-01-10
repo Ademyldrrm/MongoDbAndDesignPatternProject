@@ -1,8 +1,34 @@
-﻿
+﻿@model List<MongoDbAndDesignPatternProject.CQRSPattern.Results.GetTeamQueryResult>
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h1>Index</h1>
 
+
+<h1>Çalışan Listeleme Sayfası</h1>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>İsim Soyisim</th>
+        <th>Görevi</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.TeamID</td>
+            <td>@item.NameSurname</td>
+            <td>@item.Title</td>
+
+            <td><a href="/AdminTeam/DeleteTeam/@item.TeamID" class="btn btn-danger">Sil</a></td>
+            <td><a href="/AdminTeam/UpdateTeam/@item.TeamID" class="btn btn-success">Güncelle</a></td>
+
+        </tr>
+    }
+
+</table>
+<a href="/AdminTeam/CreateTeam" class="btn btn-primary">Yeni Çalışan ekle</a>

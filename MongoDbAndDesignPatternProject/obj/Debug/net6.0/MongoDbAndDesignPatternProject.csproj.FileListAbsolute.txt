@@ -223,3 +223,17 @@ C:\Users\AdemYildirim\source\repos\MongoDbAndDesignPatternProject\MongoDbAndDesi
 C:\Users\AdemYildirim\source\repos\MongoDbAndDesignPatternProject\MongoDbAndDesignPatternProject\obj\Debug\net6.0\MongoDbAndDesignPatternProject.pdb
 C:\Users\AdemYildirim\source\repos\MongoDbAndDesignPatternProject\MongoDbAndDesignPatternProject\obj\Debug\net6.0\MongoDbAndDesignPatternProject.genruntimeconfig.cache
 C:\Users\AdemYildirim\source\repos\MongoDbAndDesignPatternProject\MongoDbAndDesignPatternProject\obj\Debug\net6.0\ref\MongoDbAndDesignPatternProject.dll
+C:\Users\AdemYildirim\source\repos\MongoDbAndDesignPatternProject\MongoDbAndDesignPatternProject\bin\Debug\net6.0\MongoDB.Bson.dll
+C:\Users\AdemYildirim\source\repos\MongoDbAndDesignPatternProject\MongoDbAndDesignPatternProject\obj\Debug\net6.0\MongoDbAndDesignPatternProject.sourcelink.json
+C:\Users\AdemYildirim\source\repos\MongoDbAndDesignPatternProject\MongoDbAndDesignPatternProject\bin\Debug\net6.0\AWSSDK.Core.dll
+C:\Users\AdemYildirim\source\repos\MongoDbAndDesignPatternProject\MongoDbAndDesignPatternProject\bin\Debug\net6.0\AWSSDK.SecurityToken.dll
+C:\Users\AdemYildirim\source\repos\MongoDbAndDesignPatternProject\MongoDbAndDesignPatternProject\bin\Debug\net6.0\DnsClient.dll
+C:\Users\AdemYildirim\source\repos\MongoDbAndDesignPatternProject\MongoDbAndDesignPatternProject\bin\Debug\net6.0\MongoDB.Driver.dll
+C:\Users\AdemYildirim\source\repos\MongoDbAndDesignPatternProject\MongoDbAndDesignPatternProject\bin\Debug\net6.0\MongoDB.Driver.Core.dll
+C:\Users\AdemYildirim\source\repos\MongoDbAndDesignPatternProject\MongoDbAndDesignPatternProject\bin\Debug\net6.0\MongoDB.Libmongocrypt.dll
+C:\Users\AdemYildirim\source\repos\MongoDbAndDesignPatternProject\MongoDbAndDesignPatternProject\bin\Debug\net6.0\SharpCompress.dll
+C:\Users\AdemYildirim\source\repos\MongoDbAndDesignPatternProject\MongoDbAndDesignPatternProject\bin\Debug\net6.0\Snappier.dll
+C:\Users\AdemYildirim\source\repos\MongoDbAndDesignPatternProject\MongoDbAndDesignPatternProject\bin\Debug\net6.0\ZstdSharp.dll
+C:\Users\AdemYildirim\source\repos\MongoDbAndDesignPatternProject\MongoDbAndDesignPatternProject\bin\Debug\net6.0\runtimes\linux\native\libmongocrypt.so
+C:\Users\AdemYildirim\source\repos\MongoDbAndDesignPatternProject\MongoDbAndDesignPatternProject\bin\Debug\net6.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\AdemYildirim\source\repos\MongoDbAndDesignPatternProject\MongoDbAndDesignPatternProject\bin\Debug\net6.0\runtimes\win\native\mongocrypt.dll
