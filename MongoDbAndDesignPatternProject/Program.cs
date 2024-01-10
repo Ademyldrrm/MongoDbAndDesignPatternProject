@@ -1,6 +1,7 @@
 using Microsoft.Extensions.Options;
 using MongoDbAndDesignPatternProject.CQRSPattern.Handler;
 using MongoDbAndDesignPatternProject.DAL.Settings;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +11,7 @@ builder.Services.AddScoped<CreateTeamQueryHandler>();
 builder.Services.AddScoped<GetTeamByIdQueryHandler>();
 builder.Services.AddScoped<UpdateTeamCommandHandler>();
 builder.Services.AddScoped<DeleteTeamCommandHandler>();
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
 builder.Services.Configure<DatabaseSettings>(builder.Configuration.GetSection("DatabaseSettings"));
 builder.Services.AddSingleton<IDatabaseSettings>(sp =>
 {

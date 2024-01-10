@@ -30,6 +30,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5UZWFtXFVwZGF0ZVRlYW0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/AdemYildirim/source/repos/MongoDbAndDesignPatternProject/MongoDbAndDesignPatternProject/Views/AdminTestimonial/CreateTestimonial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5UZXN0aW1vbmlhbFxDcmVhdGVUZXN0aW1vbmlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AdemYildirim/source/repos/MongoDbAndDesignPatternProject/MongoDbAndDesignPatternProject/Views/AdminTestimonial/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5UZXN0aW1vbmlhbFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/AdemYildirim/source/repos/MongoDbAndDesignPatternProject/MongoDbAndDesignPatternProject/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
