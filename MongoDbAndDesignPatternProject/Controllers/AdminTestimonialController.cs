@@ -47,5 +47,10 @@ namespace MongoDbAndDesignPatternProject.Controllers
             await _mediator.Send(command);
             return RedirectToAction("Index");
         }
+        public async Task<IActionResult> TestimonialCount(GettestimonialCountQuery countQuery)
+        {
+            var count=await _mediator.Send(countQuery); 
+            return View(count);
+        }
     }
 }
