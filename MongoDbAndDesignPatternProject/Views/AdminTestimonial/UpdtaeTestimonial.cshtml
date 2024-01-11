@@ -1,0 +1,24 @@
+﻿@model MongoDbAndDesignPatternProject.MediatorDesignPattern.Results.GetTestimonialByIdQueryResult
+@{
+    ViewData["Title"] = "UpdtaeTestimonial";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Referans Güncelleme Sayfası</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="TestimonialID"/>
+    <label>Ad Soyad</label>
+    <input type="text" asp-for="NameSurname" class="form form-control" />
+    <br />
+    <label>Görevi</label>
+    <input type="text" asp-for="Title" class="form form-control" />
+    <br />
+    <label>Resim</label>
+    <input type="text" asp-for="Image" class="form form-control" />
+    <br />
+    <label>Açıklama</label>
+    <input type="text" asp-for="Description" class="form form-control" />
+    <br />
+    <button class="btn btn-primary">Güncelle</button>
+</form>

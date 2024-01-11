@@ -30,5 +30,22 @@ namespace MongoDbAndDesignPatternProject.Controllers
             await _mediator.Send(command);
             return RedirectToAction("Index");
         }
+        public async Task<IActionResult> DeleteTestimonial(string id)
+        {
+            await _mediator.Send(new RemoveTestimonialCommand(id));
+            return RedirectToAction("Index");
+        }
+        [HttpGet]
+        public async Task<IActionResult> UpdtaeTestimonial(string id)
+        {
+            var values = await _mediator.Send(new GetTestimonialByIdQuery(id));
+            return View(values);
+        }
+        [HttpPost]
+        public async Task<IActionResult> UpdtaeTestimonial(UpdateTestimonialCommand command)
+        {
+            await _mediator.Send(command);
+            return RedirectToAction("Index");
+        }
     }
 }
