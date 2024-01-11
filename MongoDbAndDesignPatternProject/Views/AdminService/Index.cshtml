@@ -1,0 +1,32 @@
+﻿@model List<MongoDbAndDesignPatternProject.CQRSPattern.Results.GetAllServiceQueryResult>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Hizmet Listeleme Sayfası</h1>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Hizmet Başlık</th>
+        <th>Hizmet Açıklama</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ServiceID</td>
+            <td>@item.ServiceTitle</td>
+            <td>@item.ServiceDescription</td>
+            <td><a href="/AdminService/DeleteService/@item.ServiceID" class="btn btn-danger">Sil</a></td>
+            <td><a href="/AdminService/UpdateService/@item.ServiceID" class="btn btn-success">Güncelle</a></td>
+
+        </tr>
+    }
+
+</table>
+<a href="/AdminService/CreateService" class="btn btn-primary">Yeni Hizmet ekle</a>
+
