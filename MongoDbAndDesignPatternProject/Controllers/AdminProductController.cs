@@ -15,22 +15,14 @@ namespace MongoDbAndDesignPatternProject.Controllers
         {
             _mediator = mediator;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var values =await _mediator.Send(new GetAllProductQuery());
+            return View(values);
         }
         [HttpGet]
         public async Task<IActionResult> CreateProduct()
         {
-            var values = await _mediator.Send(new GetAllCategoryQuery());
-
-            List<SelectListItem> messageCategoryList = (from mc in values
-                                                        select new SelectListItem
-                                                        {
-                                                            Text = mc.CategoryName,
-                                                            Value = mc.CategoryID.ToString()
-                                                        }).ToList();
-            ViewBag.messageCategoryList = messageCategoryList;
             return View();
 
         }

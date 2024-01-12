@@ -25,11 +25,10 @@ namespace MongoDbAndDesignPatternProject.MediatorDesignPattern.Handlers
                 ProductDescription = request.ProductDescription,
                 ProductImage = request.ProductImage,
                 ProductPrice = request.ProductPrice,    
-                CategoryID = request.CategoryID,
+               
 
             };
 
-            // Add the AboutArticle object to the MongoDB collection
             await _categoryCollection.InsertOneAsync(values, cancellationToken);
         }
     }
