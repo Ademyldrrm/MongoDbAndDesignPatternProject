@@ -1,0 +1,29 @@
+﻿@model List<MongoDbAndDesignPatternProject.CQRSPattern.Results.GetAllContactQueryResult>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Gelen Mesaj Listeleme Syfası</h1>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Gönderen Ad Soyad</th>
+        <th>Gönderenin Mesajı</th>
+        <th>Sil</th>
+
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ContactID</td>
+            <td>@item.NameSurname</td>
+            <td>@item.Message</td>
+
+            <td><a href="/AdminTeam/DeleteTeam/@item.ContactID" class="btn btn-danger">Sil</a></td>
+
+        </tr>
+    }
+
+</table>

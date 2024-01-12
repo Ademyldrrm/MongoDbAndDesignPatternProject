@@ -8,6 +8,7 @@
         public string TestimonialCollectionName { get; set; }
         public string ServiceCollectionName { get; set; }
         public string ProductCollectionName { get; set; }
+        public string ContactCollectionName { get; set; }
         
     }
 }

@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MongoDbAndDesignPatternProject.CQRSPattern.Commands;
+using MongoDbAndDesignPatternProject.CQRSPattern.Handler;
 
 namespace MongoDbAndDesignPatternProject.Controllers
 {
