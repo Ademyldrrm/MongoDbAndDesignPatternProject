@@ -1,0 +1,25 @@
+﻿@model MongoDbAndDesignPatternProject.MediatorDesignPattern.Commands.CreateProductCommand
+@{
+    ViewData["Title"] = "CreateProduct";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>CreateProduct</h1>
+
+<form method="post">
+    <label>Ürün Ad </label>
+    <input type="text" asp-for="ProductName" class="form form-control" />
+    <br />
+    <label>Ürün Fiyat </label>
+    <input type="text" asp-for="ProductPrice" class="form form-control" />
+    <br />
+    <label>Ürün Resim </label>
+    <input type="text" asp-for="ProductImage" class="form form-control" />
+    <label>Ürün Açıklama </label>
+    <input type="text" asp-for="ProductDescription" class="form form-control" />   
+    <br />
+    <label>Kategori ID</label>
+    <select asp-items="ViewBag.messageCategoryList" asp-for="CategoryID" class="form-control"></select>
+    <br />
+    <button class="btn btn-primary">Kaydet</button>
+</form>

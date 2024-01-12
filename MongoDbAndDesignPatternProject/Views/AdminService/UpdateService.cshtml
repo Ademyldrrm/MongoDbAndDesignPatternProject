@@ -1,0 +1,21 @@
+﻿@model MongoDbAndDesignPatternProject.CQRSPattern.Results.GetServiceByIdQueryResult
+@{
+    ViewData["Title"] = "UpdateService";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Güncelleme Sayfası</h1>
+
+<form method="post">
+    <input  type="hidden" asp-for="ServiceID"/>
+    <label>Hizmet İcon</label>
+    <input type="text" asp-for="ServiceIcon" class="form form-control" />
+    <br />
+    <label>Hizmet Başlık</label>
+    <input type="text" asp-for="ServiceTitle" class="form form-control" />
+    <br />
+    <label>Hizmet Açıklama</label>
+    <input type="text" asp-for="ServiceDescription" class="form form-control" />
+    <br />
+    <button class="btn btn-primary">Kaydet</button>
+</form>

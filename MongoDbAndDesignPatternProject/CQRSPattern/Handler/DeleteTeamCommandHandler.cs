@@ -15,12 +15,10 @@ namespace MongoDbAndDesignPatternProject.CQRSPattern.Handler
             var database = client.GetDatabase(databaseSettings.DatabaseName);
             _teamCollection = database.GetCollection<Team>(databaseSettings.TeamCollectionName);
         }
-        public void Handle(DeleteTeamCommand deleteTeamCommand)
+        public async void Handle(DeleteTeamCommand deleteTeamCommand)
         {
 
-            var values = Builders<Team>.Filter.Eq(X => X.TeamID, deleteTeamCommand.Id);
-
-            _teamCollection.DeleteOne(values);
+            var values = await _teamCollection.DeleteOneAsync(x => x.TeamID == deleteTeamCommand.Id);
         }
     }
 }

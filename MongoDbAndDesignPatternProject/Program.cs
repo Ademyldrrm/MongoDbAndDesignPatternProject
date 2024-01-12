@@ -15,6 +15,12 @@ builder.Services.AddScoped<DeleteTeamCommandHandler>();
 
 builder.Services.AddScoped<GetAllServiceQueryHandler>();
 builder.Services.AddScoped<CreateServiceQueryHandler>();
+builder.Services.AddScoped<DeleteServiceCommandHandler>();
+builder.Services.AddScoped<GetServiceByIdQueryHandler>();
+builder.Services.AddScoped<UpdateServiceQueryHandler>();
+
+
+
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
 builder.Services.Configure<DatabaseSettings>(builder.Configuration.GetSection("DatabaseSettings"));
 builder.Services.AddSingleton<IDatabaseSettings>(sp =>
