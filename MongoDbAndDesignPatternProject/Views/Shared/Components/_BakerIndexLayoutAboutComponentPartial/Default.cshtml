@@ -1,39 +1,32 @@
-﻿@model List<MongoDbAndDesignPatternProject.DAL.Entities.About>
-
+﻿@model List<MongoDbAndDesignPatternProject.DAL.Entities.AboutInformation>
 <div class="container-xxl py-6">
     <div class="container">
         <div class="row g-5">
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="row img-twice position-relative h-100">
                     <div class="col-6">
-                        <img class="img-fluid rounded" src="~/baker-1.0.0/img/about-1.jpg" alt="">
+                        <img class="img-fluid rounded" src="@ViewBag.Image1" alt="">
                     </div>
                     <div class="col-6 align-self-end">
-                        <img class="img-fluid rounded" src="~/baker-1.0.0/img/about-2.jpg" alt="">
+                        <img class="img-fluid rounded" src="@ViewBag.Image2" alt="">
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="h-100">
-                    <p class="text-primary text-uppercase mb-2">// About Us</p>
-                    <h1 class="display-6 mb-4">We Bake Every Item From The Core Of Our Hearts</h1>
-                    <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                    <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                    <h1 class="display-6 mb-4">@ViewBag.Title</h1>
+                    <p>@ViewBag.Description1</p>
+                    <p>@ViewBag.Description2</p>
                     <div class="row g-2 mb-4">
-                        <div class="col-sm-6">
-                            <i class="fa fa-check text-primary me-2"></i>Quality Products
+                        @foreach (var item in Model)
+                        {
+                            <div class="col-sm-6">
+                            <i class="fa fa-check text-primary me-2"></i>@item.AboutInformationName
                         </div>
-                        <div class="col-sm-6">
-                            <i class="fa fa-check text-primary me-2"></i>Custom Products
-                        </div>
-                        <div class="col-sm-6">
-                            <i class="fa fa-check text-primary me-2"></i>Online Order
-                        </div>
-                        <div class="col-sm-6">
-                            <i class="fa fa-check text-primary me-2"></i>Home Delivery
-                        </div>
-                    </div>
-                    <a class="btn btn-primary rounded-pill py-3 px-5" href="">Read More</a>
+                        }
+                        
+                       
+                    <a class="btn btn-primary rounded-pill py-3 px-5" href="">Devamını Gör</a>
                 </div>
             </div>
         </div>

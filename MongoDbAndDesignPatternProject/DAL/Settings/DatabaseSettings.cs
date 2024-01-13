@@ -10,6 +10,7 @@
         public string ProductCollectionName { get; set; }
         public string ContactCollectionName { get; set; }
         public string AboutCollectionName { get; set; }
+        public string AboutInformtionCollectionName { get; set; }
 
 
     }

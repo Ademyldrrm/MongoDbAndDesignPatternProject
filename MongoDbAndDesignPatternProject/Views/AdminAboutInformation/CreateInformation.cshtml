@@ -1,0 +1,15 @@
+﻿@model MongoDbAndDesignPatternProject.MediatorDesignPattern.Commands.CreateAboutInformationCommand
+@{
+    ViewData["Title"] = "CreateInformation";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>CreateInformation</h1>
+
+<form method="post">
+    <label>Bilgi</label>
+    <input type="text" asp-for="AboutInformationName" class="form form-control" />
+    <br />
+  
+    <button class="btn btn-primary">Kaydet</button>
+</form>
