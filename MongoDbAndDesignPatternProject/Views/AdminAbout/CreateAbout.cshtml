@@ -1,0 +1,26 @@
+﻿@model MongoDbAndDesignPatternProject.MediatorDesignPattern.Commands.CreateAboutCommand
+@{
+    ViewData["Title"] = "CreateAbout";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Hakkımızda Ekleme Sayfası</h1>
+
+<form method="post">
+    <label>Başlık</label>
+    <input type="text" asp-for="AboutTitle" class="form form-control" />
+    <br />
+    <label>Açıklama1</label>
+    <input type="text" asp-for="AboutDescription1" class="form form-control" />
+    <br />
+    <label>Açıklama2</label>
+    <input type="text" asp-for="AboutDescription2" class="form form-control" />
+    <br />
+    <label>Resim1</label>
+    <input type="text" asp-for="AboutImage1" class="form form-control" />
+    <br />
+    <label>Resim2</label>
+    <input type="text" asp-for="AboutImage2" class="form form-control" />
+    <br />
+    <button class="btn btn-primary">Kaydet</button>
+</form>

@@ -22,6 +22,7 @@ builder.Services.AddScoped<UpdateServiceQueryHandler>();
 builder.Services.AddScoped<CreateContactQueryHandler>();
 builder.Services.AddScoped<GetAllContactQueryHandler>();
 
+
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
 builder.Services.Configure<DatabaseSettings>(builder.Configuration.GetSection("DatabaseSettings"));
 builder.Services.AddSingleton<IDatabaseSettings>(sp =>

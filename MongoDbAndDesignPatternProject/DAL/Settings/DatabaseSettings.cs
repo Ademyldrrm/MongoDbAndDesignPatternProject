@@ -9,6 +9,8 @@
         public string ServiceCollectionName { get; set; }
         public string ProductCollectionName { get; set; }
         public string ContactCollectionName { get; set; }
-      
+        public string AboutCollectionName { get; set; }
+
+
     }
 }

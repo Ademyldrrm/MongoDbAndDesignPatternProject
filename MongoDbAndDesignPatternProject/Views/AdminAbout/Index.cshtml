@@ -1,0 +1,34 @@
+﻿@model List<MongoDbAndDesignPatternProject.MediatorDesignPattern.Results.GetAllAboutQueryResult>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Hakkımızda Listeleme Sayfası</h1>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Başlık</th>
+        <th>Açıklama1</th>
+        <th>Açıklama2</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.AboutID</td>
+            <td>@item.AboutTitle</td>
+            <td>@item.AboutDescription1</td>
+            <td>@item.AboutDescription2</td>
+
+            <td><a href="/AdminTeam/DeleteTeam/@item.AboutID" class="btn btn-danger">Sil</a></td>
+            <td><a href="/AdminTeam/UpdateTeam/@item.AboutID" class="btn btn-success">Güncelle</a></td>
+
+        </tr>
+    }
+
+</table>
+<a href="/AdminTeam/CreateTeam" class="btn btn-primary">Yeni Çalışan ekle</a>
