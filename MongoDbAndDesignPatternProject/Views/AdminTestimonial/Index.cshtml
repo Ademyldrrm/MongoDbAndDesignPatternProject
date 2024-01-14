@@ -12,6 +12,7 @@
         <th>#</th>
         <th>İsim Soyisim</th>
         <th>Görevi</th>
+        <th>Resim</th>
         <th>Sil</th>
         <th>Güncelle</th>
 
@@ -22,7 +23,7 @@
             <td>@item.TestimonialID</td>
             <td>@item.NameSurname</td>
             <td>@item.Title</td>
-            <td>@item.Image</td>
+            <td><img src="@item.Image" /></td>
 
             <td><a href="/AdminTestimonial/DeleteTestimonial/@item.TestimonialID" class="btn btn-danger">Sil</a></td>
             <td><a href="/AdminTestimonial/UpdtaeTestimonial/@item.TestimonialID" class="btn btn-success">Güncelle</a></td>
