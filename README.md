@@ -1,3 +1,17 @@
+## Proje Tanımı
+
+Baker Projesi, bir CQRS (Command Query Responsibility Segregation) ve Mediator design pattern kullanarak geliştirilmiş bir web uygulamasıdır. Proje, admin ve kullanıcı arayüzü olmak üzere iki ana bileşeni içerir. Admin arayüzü, tüm işlemleri kontrol edebilir, veritabanı olarak MongoDB kullanılmıştır.
+
+## Kullanılan Teknolojiler
+
+- MongoDB: Veritabanı olarak kullanılmıştır.
+- CQRS: Command Query Responsibility Segregation design pattern'ı kullanılmıştır.
+- Mediator: Uygulama içindeki iletişimi organize etmek için kullanılmıştır.
+- HTML
+- Css
+- Bootstrap
+
+
 ![Ekran görüntüsü 2024-01-14 143832](https://github.com/Ademyldrrm/MongoDbAndDesignPatternProject/assets/92265631/d816ab1f-9b5e-4819-8250-dd72d2f89795)
 ![Ekran görüntüsü 2024-01-14 143823](https://github.com/Ademyldrrm/MongoDbAndDesignPatternProject/assets/92265631/18d004fa-2115-446c-ade9-aab203cedb8a)
 ![Ekran görüntüsü 2024-01-14 143330](https://github.com/Ademyldrrm/MongoDbAndDesignPatternProject/assets/92265631/b8dded22-4753-42f0-aa39-d24c84cb1dd8)
